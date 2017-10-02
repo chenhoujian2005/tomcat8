@@ -15,7 +15,7 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 # Install dependencies
 RUN apt-get update && \
-apt-get install -y git curl wget unzip tar build-essential software-properties-common python-software-properties libc6 libcurl3-gnutls zlib1g
+apt-get install -y git curl wget --quiet --no-cookies  unzip tar build-essential software-properties-common python-software-properties libc6 libcurl3-gnutls zlib1g
 
 # Install JDK 8
 RUN \
